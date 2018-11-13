@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zX-kN-nFj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExampleViewController" customModule="KCKField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lCg-kW-hmM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExampleTableCell" rowHeight="270" id="ieq-1A-iJI" customClass="ExampleTableCell" customModule="KCKField" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ieq-1A-iJI" id="Jcq-vj-wce">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-9h-cAN">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="260"/>
+                                                    <subviews>
+                                                        <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0J-OT-2rO" customClass="KCKField" customModule="KCKField" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="l1e-9d-4lz"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fieldType">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Pick me dude"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8J-AS-LRz" customClass="KCKField" customModule="KCKField" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="70" width="343" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="G9R-TN-Gqe"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fieldType">
+                                                                    <integer key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Select me dude"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view tag="30" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXW-SM-K9L" customClass="KCKField" customModule="KCKField" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="140" width="343" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="d2b-IH-Ztr"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fieldType">
+                                                                    <integer key="value" value="3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="You can write a lot"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="showCounterLabel" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="maxCharacter">
+                                                                    <integer key="value" value="250"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view tag="40" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-JA-yJP" customClass="KCKField" customModule="KCKField" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="210" width="343" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="stf-Zu-tLA"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="I can hide you dude"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fieldType">
+                                                                    <integer key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="y3R-9h-cAN" secondAttribute="bottom" constant="9.5" id="MUA-Zv-XcZ"/>
+                                                <constraint firstItem="y3R-9h-cAN" firstAttribute="leading" secondItem="Jcq-vj-wce" secondAttribute="leading" constant="16" id="RUs-fA-K8h"/>
+                                                <constraint firstAttribute="trailing" secondItem="y3R-9h-cAN" secondAttribute="trailing" constant="16" id="UvZ-mA-Ond"/>
+                                                <constraint firstItem="y3R-9h-cAN" firstAttribute="top" secondItem="Jcq-vj-wce" secondAttribute="top" id="lmk-qO-VHl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="multiLineField" destination="HXW-SM-K9L" id="z9s-Tq-LTl"/>
+                                            <outlet property="passwordField" destination="PNV-JA-yJP" id="TRU-gQ-z43"/>
+                                            <outlet property="pickerField" destination="i0J-OT-2rO" id="plV-16-JBT"/>
+                                            <outlet property="selectField" destination="g8J-AS-LRz" id="esK-zb-wns"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uI0-0F-vkG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EGI-eL-RD8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lCg-kW-hmM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cj5-NL-oTU"/>
+                            <constraint firstItem="lCg-kW-hmM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J8X-XD-UOY"/>
+                            <constraint firstItem="lCg-kW-hmM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YdU-9n-T7o"/>
+                            <constraint firstItem="lCg-kW-hmM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rYA-LB-fvJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yl-x6-clV">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="q4Q-EY-LP3">
+                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KCKField Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-Md-8HA">
+                                    <rect key="frame" x="-69.5" y="-10.5" width="139" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="8MS-Md-8HA" firstAttribute="centerX" secondItem="q4Q-EY-LP3" secondAttribute="centerX" id="rc9-Jo-Qys"/>
+                                <constraint firstItem="8MS-Md-8HA" firstAttribute="centerY" secondItem="q4Q-EY-LP3" secondAttribute="centerY" id="u1N-Oa-Wx2"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exampleTableView" destination="lCg-kW-hmM" id="O2m-q8-jey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hQS-da-IBf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5zX-kN-nFj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fgh-Ae-F87">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LmE-Ck-b3g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gm6-ge-QDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BTI-NR-Y7L">
+            <objects>
+                <viewController storyboardIdentifier="SecondPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2bE-vF-gZ2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGC-LD-S0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You pushed something my son" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQd-oJ-2gn">
+                                <rect key="frame" x="42" y="320.5" width="291" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gQd-oJ-2gn" firstAttribute="centerX" secondItem="OGC-LD-S0J" secondAttribute="centerX" id="WZV-iu-CEm"/>
+                            <constraint firstItem="gQd-oJ-2gn" firstAttribute="centerY" secondItem="OGC-LD-S0J" secondAttribute="centerY" id="pDn-f6-udP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CUv-fg-i9z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMB-xF-1qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="133"/>
+        </scene>
+    </scenes>
+</document>
